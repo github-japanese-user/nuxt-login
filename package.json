@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate_ftp": "DIR=dist_ftp/ BASE=/user01/ nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "php": "php -S 0.0.0.0:80 -t ./static"
   },
   "dependencies": {
     "core-js": "^3.6.5",
