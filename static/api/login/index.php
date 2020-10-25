@@ -1,7 +1,8 @@
 <?php
 
 if ($_POST['usermame'] != 'test' || $_POST['password'] != 'test') {
-    http_response_code(401);
+    $protocol = isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0';
+    header("$protocol 401 Unauthorized");
     exit;
 }
   
